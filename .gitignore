@@ -108,3 +108,5 @@ security
 .vscode
 PythonData
 envname
+
+*.json
