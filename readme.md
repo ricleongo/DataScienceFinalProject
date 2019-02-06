@@ -1,10 +1,10 @@
 # Georgia Tech Bootcamp Data Science Final Project
 
 ### Team Members
-Karem Olavarry
-Ruth Holliday
-Carlos Aizpurua
-Juan León
+* Karem Olavarry
+* Ruth Holliday
+* Carlos Aizpurua
+* Juan León
 
 ### Please create a new branch every team member in order to control the master branch.
 
