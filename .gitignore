@@ -110,3 +110,10 @@ PythonData
 envname
 
 *.json
+
+demo
+raw_data
+
+.bash_profile
+.DS_store
+
