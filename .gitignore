@@ -108,3 +108,10 @@ security
 .vscode
 PythonData
 envname
+demo
+raw_data
+
+.bash_profile
+.DS_store
+
+.json

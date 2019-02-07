@@ -14,6 +14,7 @@ Please run this command the first time before do any local changes:
 
 ### Updates:
 
+
 Hey team, I am still working on the bot on python language, but here there are a connection between Jupyter notebook and my firts demo from IBM Watson.
 
 Please take a look and we can discuss this during our next session!!!
