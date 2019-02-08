@@ -117,3 +117,4 @@ raw_data
 .bash_profile
 .DS_store
 
+*.crc
