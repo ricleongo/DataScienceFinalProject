@@ -1,0 +1,1828 @@
+{
+  "name": "Yelp_Bot_latest",
+  "intents": [
+    {
+      "intent": "review",
+      "examples": [
+        {
+          "text": "Please show me four stars reviews?",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                15,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "text": "how many stars does it have?"
+        },
+        {
+          "text": "best ratings"
+        },
+        {
+          "text": "best place"
+        },
+        {
+          "text": "1 star places"
+        },
+        {
+          "text": "How many people have reviewed it?"
+        },
+        {
+          "text": "2 star places"
+        },
+        {
+          "text": "3 star places"
+        },
+        {
+          "text": "4 star places"
+        },
+        {
+          "text": "5 star places"
+        },
+        {
+          "text": "two stars review",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                0,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I would like to see the five stars reviews",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                24,
+                34
+              ]
+            }
+          ]
+        },
+        {
+          "text": "what is the rating?"
+        },
+        {
+          "text": "Three stars review",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                0,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "text": "check for one star review",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                10,
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "what the review of the place is 1-5 stars"
+    },
+    {
+      "intent": "No",
+      "examples": [
+        {
+          "text": "no thanks"
+        },
+        {
+          "text": "Not for now"
+        },
+        {
+          "text": "no i'm good"
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "that is wrong"
+        },
+        {
+          "text": "negative"
+        },
+        {
+          "text": "not right"
+        },
+        {
+          "text": "stop"
+        },
+        {
+          "text": "you are wrong"
+        },
+        {
+          "text": "wrong"
+        },
+        {
+          "text": "nope"
+        },
+        {
+          "text": "that's not right"
+        },
+        {
+          "text": "hell no"
+        },
+        {
+          "text": "thanks but no"
+        },
+        {
+          "text": "not right now"
+        },
+        {
+          "text": "not really"
+        },
+        {
+          "text": "no, that's ok"
+        },
+        {
+          "text": "no that's it"
+        },
+        {
+          "text": "No thank you"
+        }
+      ],
+      "description": "incorrect answer"
+    },
+    {
+      "intent": "description",
+      "examples": [
+        {
+          "text": "intent"
+        }
+      ]
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "General_Ending"
+        }
+      ]
+    },
+    {
+      "intent": "tips",
+      "examples": [
+        {
+          "text": "advice?"
+        },
+        {
+          "text": "is there any advice?"
+        },
+        {
+          "text": "advice"
+        },
+        {
+          "text": "any clues"
+        },
+        {
+          "text": "clues?"
+        },
+        {
+          "text": "clues"
+        },
+        {
+          "text": "suggestions?"
+        },
+        {
+          "text": "are there any suggestions"
+        },
+        {
+          "text": "are there any tips"
+        },
+        {
+          "text": "are there any suggestions?"
+        },
+        {
+          "text": "are there any tips?"
+        },
+        {
+          "text": "any hints?"
+        },
+        {
+          "text": "any hints"
+        },
+        {
+          "text": "do you have any hints?"
+        },
+        {
+          "text": "hints"
+        },
+        {
+          "text": "suggestions"
+        },
+        {
+          "text": "tips"
+        },
+        {
+          "text": "any tips?"
+        },
+        {
+          "text": "tips?"
+        },
+        {
+          "text": "any suggestions?"
+        }
+      ],
+      "description": "tips about the business from users"
+    },
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "It was nice chatting with you"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "I have got to go"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "I am out of here"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "thanks, by"
+        },
+        {
+          "text": "thanks bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "category",
+      "examples": [
+        {
+          "text": "mexican restaurant"
+        },
+        {
+          "text": "asian",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "asian food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "chinese food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "text": "mexican food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "text": "chinese",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "text": "fast-food"
+        },
+        {
+          "text": "american food"
+        },
+        {
+          "text": "indian food"
+        },
+        {
+          "text": "korean food"
+        },
+        {
+          "text": "food categories"
+        },
+        {
+          "text": "chinese restaurant"
+        },
+        {
+          "text": "american restaurant"
+        },
+        {
+          "text": "asian restaurant"
+        },
+        {
+          "text": "indian restaurant"
+        }
+      ],
+      "description": "category of business"
+    },
+    {
+      "intent": "hours_operation",
+      "examples": [
+        {
+          "text": "time of store hours"
+        },
+        {
+          "text": "what time does it close?"
+        },
+        {
+          "text": "when does it close?"
+        },
+        {
+          "text": "when are they open?"
+        },
+        {
+          "text": "hours of operation"
+        },
+        {
+          "text": "hours of the place"
+        },
+        {
+          "text": "hours of the store"
+        },
+        {
+          "text": "store hours"
+        },
+        {
+          "text": "what time is the store open"
+        },
+        {
+          "text": "what time is the store closed?"
+        },
+        {
+          "text": "time"
+        },
+        {
+          "text": "Is it closed?"
+        },
+        {
+          "text": "Is this store open now?"
+        },
+        {
+          "text": "when does this store close?"
+        },
+        {
+          "text": "what time does this store close?"
+        },
+        {
+          "text": "How many days are they open?"
+        },
+        {
+          "text": "When does this store open?"
+        },
+        {
+          "text": "How many days is it open?"
+        },
+        {
+          "text": "When is the store open?"
+        },
+        {
+          "text": "Is the store closed right now?"
+        },
+        {
+          "text": "what day(s) of the week are they open?"
+        }
+      ],
+      "description": "intent: what hours are they open?"
+    },
+    {
+      "intent": "location_restaurant",
+      "examples": [
+        {
+          "text": "Find a coffee shop near me"
+        },
+        {
+          "text": "near me"
+        },
+        {
+          "text": "closest place"
+        },
+        {
+          "text": "closest restaurant"
+        },
+        {
+          "text": "locate a restaurant"
+        },
+        {
+          "text": "find it"
+        },
+        {
+          "text": "where is it?"
+        },
+        {
+          "text": "where is a restaurant?"
+        },
+        {
+          "text": "find a restaurant for me"
+        },
+        {
+          "text": "find a place for me"
+        },
+        {
+          "text": "find a restaurant"
+        },
+        {
+          "text": "Can you find a restaurant near me?"
+        },
+        {
+          "text": "Can you find a coffee shop near me?"
+        },
+        {
+          "text": "Where is the closest 5 star eatery?"
+        },
+        {
+          "text": "Where is the closest Subway to me?"
+        },
+        {
+          "text": "Where is the closest coffee shop to me?"
+        },
+        {
+          "text": "Find all the top rated restaurants near me"
+        },
+        {
+          "text": "Hey, find a mexican restaurant near me"
+        },
+        {
+          "text": "find a take out place near me"
+        }
+      ],
+      "description": "where is the restaurant located?"
+    },
+    {
+      "intent": "location",
+      "examples": [
+        {
+          "text": "I am looking for a restaurant"
+        },
+        {
+          "text": "where can i get my laundry done?"
+        },
+        {
+          "text": "What is the location of this business?"
+        },
+        {
+          "text": "Where is this business located?"
+        },
+        {
+          "text": "in Atlanta please",
+          "mentions": [
+            {
+              "entity": "city",
+              "location": [
+                3,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "text": "near to North las Vegas",
+          "mentions": [
+            {
+              "entity": "city",
+              "location": [
+                8,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "text": "las vegas",
+          "mentions": [
+            {
+              "entity": "city",
+              "location": [
+                0,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "text": "find a shop near me"
+        },
+        {
+          "text": "las vegas restuarants"
+        },
+        {
+          "text": "las vegas businesses"
+        },
+        {
+          "text": "what is its location?"
+        },
+        {
+          "text": "location of it"
+        },
+        {
+          "text": "near me"
+        },
+        {
+          "text": "business near me"
+        },
+        {
+          "text": "what is its location"
+        },
+        {
+          "text": "where is it"
+        },
+        {
+          "text": "location of restuarant"
+        },
+        {
+          "text": "location of business"
+        },
+        {
+          "text": "location"
+        },
+        {
+          "text": "place near me"
+        },
+        {
+          "text": "I am looking for food"
+        }
+      ],
+      "description": "intent: Where a business is located"
+    },
+    {
+      "intent": "Hello_New_User",
+      "examples": [
+        {
+          "text": "email is pedrojose@hotmail.com and the user is Pedro",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                9,
+                30
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                47,
+                52
+              ]
+            }
+          ]
+        },
+        {
+          "text": "email is Personified.Tester3@careerbuilder.com and user is Personified",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                9,
+                46
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                59,
+                70
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Email is thisisatest@gmail.com and the name is thisIsATest.new",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                9,
+                30
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                47,
+                62
+              ]
+            }
+          ]
+        },
+        {
+          "text": "The email is carlos@gmail.com and the user's name is Carlos",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                13,
+                29
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                53,
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "text": "the name is peter and the email is petethegreat@testpeterson.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                12,
+                17
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                35,
+                64
+              ]
+            }
+          ]
+        },
+        {
+          "text": "user is Guaido email is guaidoisthepresident@venezuela.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                8,
+                14
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                24,
+                58
+              ]
+            }
+          ]
+        },
+        {
+          "text": "user is Nestor and email is nestor.manuel@careerbuildertest.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                8,
+                14
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                28,
+                63
+              ]
+            }
+          ]
+        },
+        {
+          "text": "email is trainingwatson@ibm.com username is Watson",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                9,
+                31
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                44,
+                50
+              ]
+            }
+          ]
+        },
+        {
+          "text": "emails is john.doe@careerbuilder.com and user is John",
+          "mentions": [
+            {
+              "entity": "user_email",
+              "location": [
+                10,
+                36
+              ]
+            },
+            {
+              "entity": "user_name",
+              "location": [
+                49,
+                53
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Name is John and email is john@gmail.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                8,
+                12
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                26,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "text": "name is Juan and email is juan@hotmail.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                8,
+                12
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                26,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "text": "name is Ruth and email is Ruth.cool@yahoo.com",
+          "mentions": [
+            {
+              "entity": "user_name",
+              "location": [
+                8,
+                12
+              ]
+            },
+            {
+              "entity": "user_email",
+              "location": [
+                26,
+                45
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "greetings yel["
+        },
+        {
+          "text": "greetings"
+        },
+        {
+          "text": "hey yelp"
+        },
+        {
+          "text": "yelp, hello there"
+        },
+        {
+          "text": "General_Greetings"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi yelp"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "help me"
+        },
+        {
+          "text": "hello yelp"
+        },
+        {
+          "text": "yelp hello there"
+        },
+        {
+          "text": "yelp hi"
+        },
+        {
+          "text": "yelp"
+        },
+        {
+          "text": "hey to you yelp"
+        },
+        {
+          "text": "hi to you yelp"
+        },
+        {
+          "text": "greetings to you yelp"
+        },
+        {
+          "text": "greets to you"
+        },
+        {
+          "text": "hello there"
+        },
+        {
+          "text": "hey there"
+        },
+        {
+          "text": "hi there"
+        },
+        {
+          "text": "greetings help"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "city",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Atlanta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "las vegas",
+          "synonyms": [
+            "city"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "address",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "street",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "zip code",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "state",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "city",
+          "synonyms": [
+            "las vegas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "North las Vegas",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "restaurant",
+          "synonyms": [
+            "cafe",
+            "coffee shop",
+            "cafeteria",
+            "bar",
+            "drive-in",
+            "eatery",
+            "pizzeria",
+            "fast-food place"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "store",
+          "synonyms": [
+            "place",
+            "it",
+            "shop"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "business",
+          "synonyms": [
+            "outlet"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "hours",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "close",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "open",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hours",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "time",
+          "synonyms": [
+            "times",
+            "timing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "day",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    },
+    {
+      "entity": "category",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Indian",
+          "synonyms": [
+            "naan",
+            "indian curry"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Asian",
+          "synonyms": [
+            "chinese",
+            "vietnamise",
+            "filipino",
+            "thai",
+            "korean"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "chinese",
+          "synonyms": [
+            "fried rice"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mexican",
+          "synonyms": [
+            "fajitas",
+            "tortilla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Italian",
+          "synonyms": [
+            "pasta",
+            "spaghetti"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "American",
+          "synonyms": [
+            "fries",
+            "burgers",
+            "pizza"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cuban",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "type",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "coffee",
+          "synonyms": [
+            "caffeine",
+            "espresso",
+            "cafe"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fast-food",
+          "synonyms": [
+            "Wendy's",
+            "burger King",
+            "mccdonalds"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Latin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Korean",
+          "synonyms": [
+            "asian",
+            "kimchi"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "review",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "stars",
+          "synonyms": [
+            "5 stars",
+            "4 stars",
+            "3 stars",
+            "2 stars",
+            "1 star"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1 star",
+          "synonyms": [
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "star",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "five stars",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Three stars",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "one star",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "two stars",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "four stars",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "review",
+          "synonyms": [
+            "rating",
+            "assessment",
+            "evaluation"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "user_email",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "petethegreat@testpeterson.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rebecca@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "john@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "john.doe@careerbuilder.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "guaidoisthepresident@venezuela.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pedrojose@hotmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personified.Tester3@careerbuilder.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "juan@hotmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nestor.manuel@careerbuildertest.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "a.b@c.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "a@a.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "email@emailtest.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thisisatest@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "trainingwatson@ibm.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ruth.cool@yahoo.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "carlos@gmail.com",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Precious.cool@yahoo.com",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tips",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "suggestions",
+          "synonyms": [
+            "advice",
+            "opinion",
+            "recommendation"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ideas",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "user_name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Karem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Precious",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carlos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Watson",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ruth",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pedro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rebecca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thisIsATest.new",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personified",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nestor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "peter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "John",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Guaido",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Juan",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "slot",
+      "parent": "node_23_1549589780376",
+      "variable": "$review",
+      "dialog_node": "slot_8_1549903847622",
+      "previous_sibling": "slot_4_1549903392456"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_23_1549589780376",
+      "event_name": "focus",
+      "dialog_node": "handler_15_1549736506497",
+      "previous_sibling": "slot_11_1549903867176"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_23_1549589780376",
+      "metadata": {},
+      "variable": "$category",
+      "dialog_node": "slot_11_1549903867176",
+      "previous_sibling": "slot_8_1549903847622"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_23_1549589780376",
+      "metadata": {},
+      "variable": "$location",
+      "dialog_node": "slot_4_1549903392456"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1549686496181",
+      "variable": "$user_email",
+      "dialog_node": "slot_6_1549687194149",
+      "previous_sibling": "slot_3_1549687185438"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_1_1549686496181",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1549687185427",
+      "previous_sibling": "slot_6_1549687194149"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1549686496181",
+      "variable": "$user_name",
+      "dialog_node": "slot_3_1549687185438"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Can you give me the location?"
+      },
+      "parent": "slot_4_1549903392456",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1549903392456",
+      "previous_sibling": "handler_5_1549903392456"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_4_1549903392456",
+      "context": {
+        "location": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_5_1549903392456"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What type of food are you looking for?"
+      },
+      "parent": "slot_11_1549903867176",
+      "event_name": "focus",
+      "dialog_node": "handler_13_1549903867176",
+      "previous_sibling": "handler_12_1549903867176"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_11_1549903867176",
+      "context": {
+        "category": "@category"
+      },
+      "conditions": "@category",
+      "event_name": "input",
+      "dialog_node": "handler_12_1549903867176"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1549687185438",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1549687185438",
+      "previous_sibling": "handler_4_1549687185438"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_3_1549687185438",
+      "context": {
+        "user_name": "@user_name"
+      },
+      "conditions": "@user_name",
+      "event_name": "input",
+      "dialog_node": "handler_4_1549687185438"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "How many stars?"
+      },
+      "parent": "slot_8_1549903847622",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1549903847622",
+      "previous_sibling": "handler_9_1549903847622"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1549903847622",
+      "context": {
+        "review": "@review"
+      },
+      "conditions": "@review",
+      "event_name": "input",
+      "dialog_node": "handler_9_1549903847622"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1549687194149",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1549687194149",
+      "previous_sibling": "handler_7_1549687194149"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_6_1549687194149",
+      "context": {
+        "user_email": "@user_email"
+      },
+      "conditions": "@user_email",
+      "event_name": "input",
+      "dialog_node": "handler_7_1549687194149"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bye, nice talking with you"
+              },
+              {
+                "text": "Ok, have a good evening"
+              },
+              {
+                "text": "Good bye"
+              },
+              {
+                "text": "Good bye, have a good evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#General_Ending || #No",
+      "dialog_node": "node_1_1549758463888",
+      "previous_sibling": "node_9_1549690963913"
+    },
+    {
+      "type": "standard",
+      "title": "user suggestions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{text}  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#tips",
+      "dialog_node": "node_14_1549905994769",
+      "previous_sibling": "node_23_1549589780376"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. Please rephrase your question. "
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "Please reword your statement. I do not understand."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1549758463888"
+    },
+    {
+      "type": "frame",
+      "title": "type of restuarant",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "@city ,@sys-number $review, $category"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "{restaurant}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "#location || #category || #review",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_23_1549589780376",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1549686496181",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "folder",
+      "title": "API Intents",
+      "metadata": {},
+      "dialog_node": "node_9_1549690963913",
+      "previous_sibling": "node_14_1549905994769"
+    },
+    {
+      "type": "frame",
+      "title": "Welcome New User",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to YELP Voice"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hello $user_name"
+              },
+              {
+                "text": "Nice to talk to you again $user_name"
+              },
+              {
+                "text": "Hey @user_name"
+              },
+              {
+                "text": "Hi @user_name"
+              },
+              {
+                "text": "$user_name nice to talk to you"
+              },
+              {
+                "text": "Hey $user_name nice to talk to you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "You can ask for information about restaurants, hotels and even rent a car, near you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Say something like: Yelp, let me know about the best chinese restaurants nearby."
+              },
+              {
+                "text": "Say something like: Yelp, let me know what clubs I can go to."
+              },
+              {
+                "text": "Ask something like: Yelp, I need a car, give some options."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "#Hello_New_User",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1549686496181",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              },
+              {
+                "text": "Hi! Thanks for using Yelp! How can I help you? "
+              },
+              {
+                "text": "Hey there, how can I help? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Greetings",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "d000d781-31b1-43f2-bf5c-9f89b063706c",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
