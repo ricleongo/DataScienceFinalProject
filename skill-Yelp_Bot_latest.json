@@ -5,18 +5,6 @@
       "intent": "review",
       "examples": [
         {
-          "text": "two stars review",
-          "mentions": [
-            {
-              "entity": "review",
-              "location": [
-                0,
-                9
-              ]
-            }
-          ]
-        },
-        {
           "text": "I would like to see the five stars reviews",
           "mentions": [
             {
@@ -56,10 +44,10 @@
           ]
         },
         {
-          "text": "4 star places"
+          "text": "How many people have reviewed it?"
         },
         {
-          "text": "How many people have reviewed it?"
+          "text": "4 star places"
         },
         {
           "text": "how many stars does it have?"
@@ -75,6 +63,9 @@
               ]
             }
           ]
+        },
+        {
+          "text": "what are the reviews for burger king"
         },
         {
           "text": "give me the best place"
@@ -108,6 +99,18 @@
         },
         {
           "text": "5 star places"
+        },
+        {
+          "text": "two stars review",
+          "mentions": [
+            {
+              "entity": "review",
+              "location": [
+                0,
+                9
+              ]
+            }
+          ]
         }
       ],
       "description": "what the review of the place is 1-5 stars"
@@ -116,7 +119,7 @@
       "intent": "No",
       "examples": [
         {
-          "text": "no thanks"
+          "text": "Not for now"
         },
         {
           "text": "negative"
@@ -164,7 +167,7 @@
           "text": "No thank you"
         },
         {
-          "text": "Not for now"
+          "text": "no thanks"
         },
         {
           "text": "no i'm good"
@@ -369,60 +372,6 @@
       "intent": "category",
       "examples": [
         {
-          "text": "mexican restaurant"
-        },
-        {
-          "text": "korean food"
-        },
-        {
-          "text": "chinese food",
-          "mentions": [
-            {
-              "entity": "category",
-              "location": [
-                0,
-                7
-              ]
-            }
-          ]
-        },
-        {
-          "text": "asian food",
-          "mentions": [
-            {
-              "entity": "category",
-              "location": [
-                0,
-                5
-              ]
-            }
-          ]
-        },
-        {
-          "text": "asian",
-          "mentions": [
-            {
-              "entity": "category",
-              "location": [
-                0,
-                5
-              ]
-            }
-          ]
-        },
-        {
-          "text": "mexican food",
-          "mentions": [
-            {
-              "entity": "category",
-              "location": [
-                0,
-                7
-              ]
-            }
-          ]
-        },
-        {
           "text": "chinese",
           "mentions": [
             {
@@ -442,6 +391,60 @@
         },
         {
           "text": "indian food"
+        },
+        {
+          "text": "asian food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "mexican restaurant"
+        },
+        {
+          "text": "asian",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "text": "chinese food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "text": "mexican food",
+          "mentions": [
+            {
+              "entity": "category",
+              "location": [
+                0,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "text": "korean food"
         },
         {
           "text": "food categories"
@@ -534,7 +537,13 @@
           "text": "what day(s) of the week are they open?"
         },
         {
-          "text": "are they open now?"
+          "text": "please let me know the hours"
+        },
+        {
+          "text": "please give me the hours of restaurant"
+        },
+        {
+          "text": "what are the hours"
         },
         {
           "text": "time close"
@@ -561,7 +570,7 @@
           "text": "opening hours?"
         },
         {
-          "text": "what are the hours"
+          "text": "are they open now?"
         },
         {
           "text": "are they open"
@@ -585,7 +594,7 @@
       "intent": "location_restaurant",
       "examples": [
         {
-          "text": "Where is the closest Subway to me?"
+          "text": "Where is the closest 5 star eatery?"
         },
         {
           "text": "near me"
@@ -624,9 +633,6 @@
           "text": "Can you find a coffee shop near me?"
         },
         {
-          "text": "Where is the closest 5 star eatery?"
-        },
-        {
           "text": "Find a coffee shop near me"
         },
         {
@@ -640,6 +646,9 @@
         },
         {
           "text": "Where is the closest coffee shop to me?"
+        },
+        {
+          "text": "Where is the closest Subway to me?"
         }
       ],
       "description": "where is the restaurant located?"
@@ -992,16 +1001,13 @@
           "text": "greetings to you yelp"
         },
         {
+          "text": "hi to you yelp"
+        },
+        {
           "text": "Hi my name is Carlos"
         },
         {
           "text": "hey, my name is Juan"
-        },
-        {
-          "text": "Hello, my name is Karem"
-        },
-        {
-          "text": "Hello my name is Ruth"
         },
         {
           "text": "General_Greetings"
@@ -1034,7 +1040,13 @@
           "text": "greetings yel["
         },
         {
-          "text": "hi to you yelp"
+          "text": "Hello, my name is Karem"
+        },
+        {
+          "text": "hey to you yelp"
+        },
+        {
+          "text": "Hello my name is Ruth"
         },
         {
           "text": "yelp, hello there"
@@ -1047,9 +1059,6 @@
         },
         {
           "text": "yelp"
-        },
-        {
-          "text": "hey to you yelp"
         },
         {
           "text": "greetings help"
@@ -1290,7 +1299,7 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "star",
+          "value": "two stars",
           "synonyms": []
         },
         {
@@ -1306,6 +1315,11 @@
         },
         {
           "type": "synonyms",
+          "value": "star",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "stars",
           "synonyms": [
             "5 stars",
@@ -1314,11 +1328,6 @@
             "2 stars",
             "1 star"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "two stars",
-          "synonyms": []
         },
         {
           "type": "synonyms",
@@ -1462,19 +1471,26 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "ideas",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "suggestions",
+          "value": "tips",
           "synonyms": [
             "advice",
             "opinion",
-            "recommendation"
+            "recommendation",
+            "suggestions"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reviews",
+          "synonyms": [
+            "reviews",
+            "report",
+            "ideas",
+            "review"
           ]
         }
-      ]
+      ],
+      "fuzzy_match": true
     },
     {
       "entity": "user_name",
@@ -1486,17 +1502,17 @@
         },
         {
           "type": "synonyms",
-          "value": "Watson",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "Precious",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "Carlos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Watson",
           "synonyms": []
         },
         {
@@ -1564,9 +1580,11 @@
   "dialog_nodes": [
     {
       "type": "slot",
+      "output": {},
       "parent": "node_23_1549589780376",
-      "variable": "$review",
-      "dialog_node": "slot_8_1549903847622",
+      "metadata": {},
+      "variable": "$category",
+      "dialog_node": "slot_11_1549903867176",
       "previous_sibling": "slot_4_1549903392456"
     },
     {
@@ -1575,15 +1593,6 @@
       "event_name": "focus",
       "dialog_node": "handler_15_1549736506497",
       "previous_sibling": "slot_11_1549903867176"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_23_1549589780376",
-      "metadata": {},
-      "variable": "$category",
-      "dialog_node": "slot_11_1549903867176",
-      "previous_sibling": "slot_8_1549903847622"
     },
     {
       "type": "slot",
@@ -1699,26 +1708,6 @@
     },
     {
       "type": "event_handler",
-      "output": {
-        "text": "How many stars?"
-      },
-      "parent": "slot_8_1549903847622",
-      "event_name": "focus",
-      "dialog_node": "handler_10_1549903847622",
-      "previous_sibling": "handler_9_1549903847622"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_8_1549903847622",
-      "context": {
-        "review": "@review"
-      },
-      "conditions": "@review",
-      "event_name": "input",
-      "dialog_node": "handler_9_1549903847622"
-    },
-    {
-      "type": "event_handler",
       "output": {},
       "parent": "slot_6_1549687194149",
       "event_name": "focus",
@@ -1765,20 +1754,23 @@
       "previous_sibling": "node_9_1549690963913"
     },
     {
-      "type": "standard",
-      "title": "Hours Open",
+      "type": "frame",
+      "title": "user suggestions",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "@category {name} is open: @hours {hours} "
-              },
+                "text": "{text}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
               {
-                "text": "Here are the hours of @category @name:  {hours} "
-              },
-              {
-                "text": "they close: @hours {hours}"
+                "text": "{text}  + @category $name "
               }
             ],
             "response_type": "text",
@@ -1786,10 +1778,15 @@
           }
         ]
       },
-      "metadata": {},
-      "conditions": "#hours_operation || @hours",
-      "dialog_node": "node_19_1549927775680",
-      "previous_sibling": "node_23_1549589780376"
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "#tips || @tips",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_14_1549905994769",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_23_1549589780376",
+      "digress_out_slots": "not_allowed"
     },
     {
       "type": "standard",
@@ -1826,7 +1823,16 @@
           {
             "values": [
               {
-                "text": "{stars} + @review + {name}"
+                "text": "{stars}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "{stars} + @review + @category {name}"
               }
             ],
             "response_type": "text",
@@ -1847,7 +1853,7 @@
           {
             "values": [
               {
-                "text": "@city ,@sys-number $review, $category"
+                "text": "{restaurant}"
               }
             ],
             "response_type": "text",
@@ -1856,7 +1862,7 @@
           {
             "values": [
               {
-                "text": "{restaurant}"
+                "text": "@city ,@sys-number $review, $category"
               }
             ],
             "response_type": "text",
@@ -1867,7 +1873,7 @@
       "metadata": {
         "fallback": "leave"
       },
-      "conditions": "#location || #category || #review",
+      "conditions": "#location || #category",
       "digress_in": "does_not_return",
       "dialog_node": "node_23_1549589780376",
       "digress_out": "allow_all",
@@ -1875,10 +1881,39 @@
       "digress_out_slots": "not_allowed"
     },
     {
-      "type": "folder",
-      "title": "API Intents",
+      "type": "standard",
+      "title": "Hours Open",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "{hoursoperation}"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Here are the hours of @category @name:  {hours} "
+              },
+              {
+                "text": "they close: @hours {hours}"
+              },
+              {
+                "text": "@category {name} is open: @hours {hours} "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "metadata": {},
-      "dialog_node": "node_9_1549690963913",
+      "conditions": "#hours_operation || @hours",
+      "dialog_node": "node_19_1549927775680",
       "previous_sibling": "node_14_1549905994769"
     },
     {
@@ -1956,30 +1991,11 @@
       "digress_out_slots": "not_allowed"
     },
     {
-      "type": "frame",
-      "title": "user suggestions",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "{text}  + @category $name "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "metadata": {
-        "fallback": "leave"
-      },
-      "conditions": "#tips || @tips",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_14_1549905994769",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_18_1549925702735",
-      "digress_out_slots": "not_allowed"
+      "type": "folder",
+      "title": "API Intents",
+      "metadata": {},
+      "dialog_node": "node_9_1549690963913",
+      "previous_sibling": "node_18_1549925702735"
     },
     {
       "type": "standard",
@@ -2016,5 +2032,5 @@
     }
   },
   "learning_opt_out": false,
-  "status": "Available"
+  "status": "Training"
 }
