@@ -1,5 +1,6 @@
 # Georgia Tech Bootcamp Data Science Final Project
 
+
 ### Team Members
 * Karem Olavarry
 * Ruth Holliday
@@ -8,8 +9,11 @@
 
 
 # Yelp Recomendations Voice bot
+![alt text](images/yelp.png)
 
-The purpose of this final project is present the advances of Machine Learning and how could be implemented in the day by day of the current user. 
+From [Yelp public datasets academy webpage](https://www.yelp.com/dataset) we stared to make some analysis about how we can make this information more available to everybody without the need to open a computer or even stop to open a browser from a smart phone.
+
+The purpose of this final project is to present the characteristics of Machine Learning and how could be implemented in the day by day of a current user. 
 
 
 # The architecture of the application is design as:
