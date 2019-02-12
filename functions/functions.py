@@ -21,29 +21,33 @@ def login(phoneNumber):
 
     userItem = [item for item in names if item["phone"] == phoneNumber]
 
-    username = userItem[0]["name"]
-    email = userItem[0]["email"]
+    if len(userItem) > 0:
+        username = userItem[0]["name"]
+        email = userItem[0]["email"]
+    else:
+        username = "Sir"
+        email = ""
 
     return "Email is {} and User is {}".format(username, email)
 
-def getRestaurantList(category):
+def getRestaurantList(watson_values):
 
-    restaurants = df_business.filter((col("stars") >= 4) & (col("categories").like("%" + category + "%")) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).groupBy("categories", "name", "stars", "hours",).count().take(3)
+    if len(watson_values.split(",")) > 1:
+        category = watson_values.split(",")[0].strip()
+        review = watson_values.split(",")[1].strip()
+        city = watson_values.split(",")[2].strip()
+    else:
+        category = "rent a car"
+        review = ""
+        city = "Atlanta"
 
-    return [restaurant.name for restaurant in restaurants]
+    cat_filter = f"%{category}%"
 
+    restaurants = df_business.filter((col("stars") >= 4) & (col("categories").like(cat_filter)) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).groupBy("categories", "name", "stars", "hours").count().take(3)
 
-def getReviews():
-    reviews = df_business.select("hours").filter((col("stars") >= 4) & (col("categories").like("%Japanese%")) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).take(3)
-    # {stars} + @review + {name}
-    return ""
+    top_rest = ', '.join([restaurant.name for restaurant in restaurants])
+    response_ = f"Most recomended restaurants, in the city of {city} are {top_rest}"
 
-def suggestion():
-    # {text}  + @category $name 
-    return ""
+    print(response_)
 
-def hoursOperarion():
-    # @category {name} is open: @hours {hours} 
-    # Here are the hours of @category @name:  {hours} 
-    # they close: @hours {hours}
-    return ""
+    return response_

@@ -5,6 +5,7 @@ from twilio.twiml.voice_response import Gather, VoiceResponse
 from watson_developer_cloud import AssistantV2
 from assistant_config.config import *
 from functions.functions import *
+from functions.als import *
 
 #################################################
 # Flask Setup
@@ -12,6 +13,7 @@ from functions.functions import *
 app = Flask(__name__)
 
 sessionID = ""
+model = get_als_model()
 
 #################################################
 # Flask Routes
@@ -71,35 +73,17 @@ def assistant():
                 if intern_response['response_type'] == 'text':
                     print(intern_response['text'])
 
-                    # if intern_response['text'] == "{userName}":
-                    #     messageApi = assistant.message(
-                    #         watson_assistanceID,
-                    #         sessionID,
-                    #         input={'text': login()}).get_result()
+                    flag_variable = ""
+                    flag_values = ""
 
-                    #     if (len(messageApi['output']['generic']) > 0):
-                    #         for intern_api_response in messageApi['output']['generic'] :
-                    #             if intern_api_response['response_type'] == 'text':
-                    #                 print(intern_api_response['text'])
-                    #                 gather.say(intern_api_response['text'], voice= 'alice')
+                    if len(intern_response['text'].split("::")) > 1:
+                        flag_variable = intern_response['text'].split("::")[0].strip()
+                        flag_values = intern_response['text'].split("::")[1].strip()
 
-                    if intern_response['text'] == "{restaurant}":
-                        gather.say('sure, I will let you know about the some restaurants nearby', voice= 'alice')
-
-                        for idea_response  in getRestaurantList() :
-                            gather.say(idea_response, voice= 'alice')
-
-                    elif intern_response['text'] == "{resumeviewed}":
-                        gather.say('sure thing, I will let you know about the most recent resumes viewed.', voice= 'alice')
-
-                        # for idea_response in most_viewed_resumes() :
-                        #     gather.say(idea_response, voice= 'alice')
-
-                    elif intern_response['text'] == "{actionused}":
-                        gather.say('hold on a second, I am collecting the data.', voice= 'alice')
-
-                        # for idea_response in actions_used_by_recruiter() :
-                        #     gather.say(idea_response, voice= 'alice')
+                    if flag_variable == "{restaurant}":
+                        gather.say('sure, I will let you know about some restaurants nearby', voice= 'alice')
+                        
+                        gather.say(getRestaurantList(flag_values), voice= 'alice')
 
                     elif (len(response_watson['output']['intents']) > 0):
 
@@ -120,8 +104,6 @@ def assistant():
                     else:
                         gather.say(intern_response['text'], voice= 'alice')
 
-
-
             gather.pause(4)
             gather.say('Is there other question that I can answer?', voice= 'alice')
 
@@ -134,8 +116,6 @@ def assistant():
             },
             input={'text': login(number)}).get_result()
 
-        # print(json.dumps(response_watson, indent=2))
-
         if (len(response_watson['output']['generic']) > 0):
             for intern_response in response_watson['output']['generic'] :
                 if intern_response['response_type'] == 'text':
@@ -143,13 +123,10 @@ def assistant():
                     gather.say(intern_response['text'], voice= 'alice')
 
             gather.pause(3)
-            # print('Remember, you can know what the people is thinking about some store or business. Just ask: Yelp, let me know about Thai Restaurants.', voice= 'alice')
             gather.say('Remember, you can know what the people is thinking about some store or business. Just ask: Yelp, let me know about Thai Restaurants.', voice= 'alice')
 
 
     twilio_response.append(gather)
-
-    # print(twilio_response)
 
     return str(twilio_response)
 
