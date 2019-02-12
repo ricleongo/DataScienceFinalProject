@@ -109,17 +109,18 @@ security
 PythonData
 envname
 
-*.json
+# *.json
 
 demo
 raw_data
+data_source
 
 .bash_profile
-.DS_store
+*.DS_Store
 
 *.crc
-.bash_profile
-.DS_store
+*.bash_profile
+*.DS_Store
 
 metastore_db
 donotpush
