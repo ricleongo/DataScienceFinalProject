@@ -26,8 +26,24 @@ def login(phoneNumber):
 
     return "Email is {} and User is {}".format(username, email)
 
-def getRestaurantList():
+def getRestaurantList(category):
 
-    restaurants = df_business.filter((col("stars") >= 4) & (col("categories").like("%Japanese%")) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).groupBy("categories", "name", "stars", "hours",).count().take(3)
+    restaurants = df_business.filter((col("stars") >= 4) & (col("categories").like("%" + category + "%")) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).groupBy("categories", "name", "stars", "hours",).count().take(3)
 
     return [restaurant.name for restaurant in restaurants]
+
+
+def getReviews():
+    reviews = df_business.select("hours").filter((col("stars") >= 4) & (col("categories").like("%Japanese%")) &(col("state") == 'NV') & (col("city") == 'North Las Vegas')).take(3)
+    # {stars} + @review + {name}
+    return ""
+
+def suggestion():
+    # {text}  + @category $name 
+    return ""
+
+def hoursOperarion():
+    # @category {name} is open: @hours {hours} 
+    # Here are the hours of @category @name:  {hours} 
+    # they close: @hours {hours}
+    return ""

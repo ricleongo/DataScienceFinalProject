@@ -120,3 +120,6 @@ raw_data
 *.crc
 .bash_profile
 .DS_store
+
+metastore_db
+donotpush
