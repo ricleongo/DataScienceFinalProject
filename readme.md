@@ -8,6 +8,10 @@
 * Juan León
 
 
+### Presentation Slides
+![](images/slides.jpg)
+[This is the presentation from Google Docs](https://docs.google.com/presentation/d/1vZpjvNS7Op98hiR9F4iP17zh7E9AxM8FYF-1Z2t0gFY/edit#slide=id.p)
+
 # Yelp Recomendations Voice bot
 ![alt text](images/yelp.png)
 
